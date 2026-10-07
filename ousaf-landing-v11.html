@@ -286,6 +286,18 @@
   }
   .chain-node:nth-child(3) .ring, .chain-node:nth-child(4) .ring{border-color:var(--magenta); color:var(--magenta);}
   #stack .chain-node .ring{font-size:22px;}
+  #stack .chain-node .ring img{
+    width:30px;
+    height:30px;
+    object-fit:contain;
+    display:block;
+  }
+
+  #stack .chain-node .ring img:hover{
+    transform:scale(1.08);
+  }
+
+
   #stack .chain-node:nth-child(3) .ring, #stack .chain-node:nth-child(4) .ring{border-color:var(--cyan); color:var(--cyan);}
   .chain-node h4{font-family:'Chakra Petch',sans-serif; font-size:0.95rem; color:#fff; margin-bottom:4px;}
   .chain-node span{font-family:'JetBrains Mono',monospace; font-size:10.5px; color:var(--text-dim);}
@@ -317,6 +329,32 @@
     transition:background 0.25s ease;
   }
   .fs-card:hover{background:rgba(0,229,255,0.04);}
+  .fs-icon img{
+    width:32px;
+    height:32px;
+    object-fit:contain;
+    display:block;
+  }
+
+  .fs-icon.fs-dual{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+  }
+
+  .fs-icon.fs-dual img{
+    width:25px;
+    height:25px;
+  }
+
+  .fs-icon .ai-mark{
+    font-family:monospace;
+    font-size:22px;
+    font-weight:700;
+    letter-spacing:-1px;
+  }
+
   .fs-icon{color:var(--cyan); font-size:1rem; margin-bottom:16px;}
   .fs-card h3{
     font-family:'Chakra Petch',sans-serif; font-size:1.02rem; color:#fff; margin-bottom:10px; font-weight:600;
@@ -564,22 +602,22 @@
     </div>
     <div class="fs-grid">
       <div class="fs-card">
-        <div class="fs-icon">◆</div>
+        <div class="fs-icon"><img src="assets/icons/react.svg" alt="React"></div>
         <h3>Front End</h3>
         <p>React + Tailwind interfaces — dashboards, admin panels, landing pages, all mobile-first and built for real usage, not just demos.</p>
       </div>
       <div class="fs-card">
-        <div class="fs-icon">◆</div>
+        <div class="fs-icon fs-dual"><img src="assets/icons/nodejs.svg" alt="Node.js"><img src="assets/icons/python.svg" alt="Python"></div>
         <h3>Back End</h3>
         <p>Node.js and Python APIs, auth systems, and database design — the infrastructure that keeps a product running after launch day.</p>
       </div>
       <div class="fs-card">
-        <div class="fs-icon">◆</div>
+        <div class="fs-icon"><span class="ai-mark">AI</span></div>
         <h3>AI Assistants</h3>
         <p>OpenAI-powered chat and support assistants embedded directly into products — trained on real workflows, not generic scripts.</p>
       </div>
       <div class="fs-card">
-        <div class="fs-icon">◆</div>
+        <div class="fs-icon"><img src="assets/icons/docker.svg" alt="Docker"></div>
         <h3>Automation</h3>
         <p>Scheduled jobs, pipelines, and integrations that connect voice, web, and backend systems into one working product.</p>
       </div>
@@ -593,27 +631,27 @@
     </div>
     <div class="chain">
       <div class="chain-node">
-        <div class="ring">🐧</div>
+        <div class="ring"><img src="assets/icons/ubuntu.svg" alt="Ubuntu"></div>
         <h4>Ubuntu / WSL2</h4>
         <span>Linux base</span>
       </div>
       <div class="chain-node">
-        <div class="ring">📞</div>
+        <div class="ring"><img src="assets/icons/asterisk.svg" alt="Asterisk"></div>
         <h4>Asterisk / PJSIP</h4>
         <span>VoIP engine</span>
       </div>
       <div class="chain-node">
-        <div class="ring">🐍</div>
+        <div class="ring"><img src="assets/icons/python.svg" alt="Python"></div>
         <h4>Python / Flask</h4>
         <span>Backend APIs</span>
       </div>
       <div class="chain-node">
-        <div class="ring">🤖</div>
+        <div class="ring"><span class="ai-mark">AI</span></div>
         <h4>OpenAI / ElevenLabs</h4>
         <span>AI &amp; voice</span>
       </div>
       <div class="chain-node">
-        <div class="ring">🌐</div>
+        <div class="ring"><img src="assets/icons/react.svg" alt="React"></div>
         <h4>React</h4>
         <span>Frontend UI</span>
       </div>
